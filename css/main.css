@@ -1,0 +1,371 @@
+:root{
+    --pink:#ffc5bf;
+    --cian: #00c2bb;
+    --font-size: 2.4rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Satisfy';
+    font-family: "Roboto";
+    color: #2f2f2d;
+}
+button{
+    background-color: var(--cian);
+    padding: 12px 12px;
+    border-radius: 25px;
+    border: none;
+    font-size: 1.9rem;
+    color: white;
+    font-weight: 500;
+    font-family: "Roboto";
+    width: fit-content;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+header .logo{
+    height: 70px;
+    width: 300px;
+    border: solid 1px black;
+}
+.header-icons-container{
+    display: none;
+}
+.intro-container{
+    width: 100%;
+    background-color: var(--pink);
+    text-align: center;
+    padding: 30px 0px;
+    font-size: 2.4rem;
+    
+}
+.title-container{
+    font-size: 5.5rem;
+    font-weight: 300;
+    font-family: "Pathway Gothic One";
+    margin-bottom: 32px;
+}
+.intro-container img{
+    margin-top: 40px;
+    width: 100%;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+.start-container{
+    width: 100%;
+    height: 800px;
+    background-image: url(https://0v1.fd1.myftpupload.com/wp-content/uploads/2021/07/asd);
+    background-size:cover;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    padding: 0 16px;
+}
+.start{
+    text-align: center;
+    font-size: var(--font-size);
+    background-color: white;
+    opacity: 0.8;
+    font-weight: 400;
+}
+.start .text{
+    margin-bottom: 40px;
+    line-height: 40px;
+}
+.start h1{
+    font-family: "Pathway Gothic One";
+}
+.business-container{
+    width: 100%;
+    padding: 30px 16px;
+    display: grid;
+}
+.business-container button{
+    place-self: center  ;
+}
+.business{
+    width: 100%;
+    display: grid;
+}
+.business .intro{
+    font-size: 2rem;
+    font-family: "Pathway Gothic One";
+    margin: 30px 0 10px;
+    
+}
+.business .title{
+    font-family: "Satisfy";
+    font-size: 2.2rem;
+    margin: 20px 0;
+}
+.business .text{
+    font-size: 1.9rem;
+    font-weight: 300;
+    line-height: 40px;
+    margin-bottom: 20px;
+}   
+.image-container{
+    justify-self: center;
+    display: grid;
+    place-items: center;
+    padding: 50px 0;
+}
+.image-container .img{
+    width: 85%;
+}
+.llavero{
+    display: none;
+}
+.product-container{
+    width: 100%;
+    padding: 60px 16px 30px;
+    text-align: center;
+    background-color: var(--pink);
+}
+.product-container .intro .title{
+    font-family: "Satisfy";
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.product-container .intro .text{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 40px;
+}
+.slider{
+    width: 100%;
+    background-color: white;
+    max-width: 540px;
+    position: relative;
+}
+.slider .slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    text-align: justify;
+    padding: 50px;
+    transition: opacity .5s;
+    -o-transition: opacity .5s;
+}
+.slide-content{
+    margin-bottom: 30px;
+}
+.slide .title{
+    font-size: 2rem;
+    font-family: "Pathway Gothic One";
+    margin-bottom: 20px;
+}
+.slide .text{
+    font-size: 1.8rem;
+    line-height: 25px;
+    font-weight: 300;
+}
+.slide .image-container{
+    width: 100%;
+}
+.slide .image-container .img{
+    width: 100%;
+}
+.slide button{
+    place-self: center;
+}
+.slider #btn-left{
+    position: absolute;
+    left: 0;
+    top: calc(50% - 10px);
+    background-color: transparent;
+    color: rgb(80, 79, 79);
+}
+.slider #btn-right{
+    position: absolute;
+    right: 0;
+    top: calc(50% - 10px);
+    background-color: transparent;
+    color: rgb(80, 79, 79);
+}
+.products{
+    padding-top: 60px;
+}
+.products > .title{
+    font-family: "Satisfy";
+    text-align: center;
+    font-size: 2.5rem;
+}
+.products button{
+    place-self: center;
+    grid-column-end: 3;
+    grid-column-start: 1;
+    padding: 10px 20px;
+}
+.products-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 16px;
+    padding-bottom: 60px;
+    gap: 40px;
+}
+.products-container .card{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: -3px 8px 23px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 8px 23px -10px rgba(0,0,0,0.75);
+    box-shadow: -3px 8px 23px -10px rgba(0,0,0,0.75);
+    font-size: 1.6rem;
+}
+.products-container .card img{
+    width: 100%;
+}
+.products-container .card .title{
+    color: #152d69;
+}
+.products-container .card .gain{
+    font-weight: 500;
+    font-size: 1.8rem;
+
+}
+.business-woman{
+    width: 100%;
+    padding: 40px 16px 80px 16px;
+    color: white;
+    background-color: #6aa8a3;
+}
+.business-woman img{
+    width: 100%;
+}
+.business-woman > .title{
+    font-family: "Satisfy";
+    font-size: 2.4rem;
+}
+.business-woman > .text{
+    font-size: 1.8rem;
+    line-height: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.earn{
+    width: 100%;
+    text-align: center;
+    padding: 30px 16px 80px;
+}
+.earn .title{
+    font-family: "Pathway Gothic One";
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+.earn .text{
+    font-family: "Satisfy";
+    font-size: 3rem;
+}
+.earn-content{
+    display: grid;
+    place-items: center;
+}
+.earn .card{
+    width: 300px;
+}
+.earn .card p{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.invest{
+    background-color: var(--pink);
+    padding: 30px 16px 70px 16px;
+    text-align: center;
+}
+.invest .title{
+    font-family: "Satisfy";
+    font-size: 3rem;
+    margin: 30px 0;
+}
+.invest .text{
+    font-size: 3rem;
+    line-height: 50px;
+    font-weight: 400;
+}
+.make{
+    background-color: var(--cian);
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 50px;
+    padding: 40px 16px;
+    margin-top: 30px;
+}
+.assurance{
+    font-size: 3rem;
+    text-align: center;
+    background-color: var(--pink);
+    padding: 40px 16px;
+    line-height: 70px;
+}
+.featuresandform{
+    padding: 30px 16px;
+}
+.features{
+    background-color: rgb(255, 219, 215);;
+    font-size: 2.4rem;
+    padding: 0 24px;
+}
+.features .title{
+    font-family: "Pathway Gothic One";
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+.features .title2{
+    font-family: "Satisfy";
+    margin-bottom: 50px;
+}
+.features .text{
+    margin-bottom: 40px;
+}
+.features ul{
+    padding-left: 40px;
+}
+.features ul li{
+    margin-bottom: 30px;
+}
+.form-section{
+    background-color: var(--pink);
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    display: grid;
+    place-items: center;
+    padding: 32px;
+}
+.form-section .text{
+    width: 260px;
+}
+.form-section .form{
+    display: grid;
+    text-align: left;
+    width: 100%;
+}
+.form input{
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+.form-section .button-container{
+    display: flex;
+    height: 40px;
+    position: relative;
+    margin-bottom: 22px;
+
+}
+.button-container img{
+    position: absolute;
+    bottom: -15px;
+    height: 40px;left: -30px;
+}
+.form-section button{
+    border-radius: 0;
+    padding: 10px;
+}
