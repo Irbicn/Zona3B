@@ -1,0 +1,76 @@
+header{
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    padding: 12px;
+    height: auto;
+    max-height: 80px;
+    width: 40%;
+    max-width: 300px;
+}
+header .header-icons-container{
+    display: flex;
+    column-gap: 4px;
+}
+ .fb-icon, .ig-icon{
+    padding: 15px 20px;
+    border: black 1px solid;
+    border-radius: 5px;
+}
+.intro-container{
+    background-image:url(https://secureservercdn.net/45.40.148.234/0v1.fd1.myftpupload.com/wp-content/uploads/2021/07/Mesa-de-trabajo-1-1.png?time=1634026474);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    justify-items: right;
+}
+.intro-container img{
+    display: none;
+}
+.intro-container .title-container{
+    width: 30%;
+}
+.intro-container .text-container{
+    width: 50%;
+}
+.ring, .necklace{
+    column-gap: 32px;
+}
+.business .ring img, .business .necklace img{
+    top: 0;
+    width: 100%;
+    max-width: 500px;
+    max-height: 600px;
+}
+.start{
+    width: 80%;
+    max-width: 1000px;
+}
+.slider{
+    max-width: 1400px;
+}
+.slide{
+    place-items: center;
+}
+.slide-content{
+    max-width: 500px;
+}
+.products{
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto;
+    padding: 20px;
+    row-gap: 30px;
+}
+.products-container{
+    display: flex;
+}
+.products .button{
+    grid-column: 1/1;
+}
+.products-container .card{
+    max-width: 300px;
+}

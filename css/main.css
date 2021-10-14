@@ -14,7 +14,9 @@ html{
     font-family: "Roboto";
     color: #2f2f2d;
 }
-button{
+.button{
+    
+    height: fit-content;
     background-color: var(--cian);
     padding: 12px 12px;
     border-radius: 25px;
@@ -24,15 +26,17 @@ button{
     font-weight: 500;
     font-family: "Roboto";
     width: fit-content;
+    text-decoration: none;
+}
+.button:focus-visible{
+    outline: none;
 }
 header{
     display: flex;
     justify-content: center;
 }
 header .logo{
-    height: 70px;
-    width: 300px;
-    border: solid 1px black;
+    width: 70%;
 }
 .header-icons-container{
     display: none;
@@ -41,15 +45,20 @@ header .logo{
     width: 100%;
     background-color: var(--pink);
     text-align: center;
-    padding: 30px 0px;
-    font-size: 2.4rem;
-    
+    padding: 30px 16px;
 }
-.title-container{
+.intro-container .title{
     font-size: 5.5rem;
     font-weight: 300;
     font-family: "Pathway Gothic One";
-    margin-bottom: 32px;
+    margin-bottom: 34px;
+}
+.intro-container .text{
+    font-size: 2.4rem;
+}
+.title-container{
+    margin-bottom: 20px;
+    padding: 0 16px;
 }
 .intro-container img{
     margin-top: 40px;
@@ -59,7 +68,7 @@ header .logo{
 }
 .start-container{
     width: 100%;
-    height: 800px;
+    height: 950px;
     background-image: url(https://0v1.fd1.myftpupload.com/wp-content/uploads/2021/07/asd);
     background-size:cover;
     background-position-x: right;
@@ -76,7 +85,7 @@ header .logo{
     font-weight: 400;
 }
 .start .text{
-    margin-bottom: 40px;
+    margin-top: 40px;
     line-height: 40px;
 }
 .start h1{
@@ -87,7 +96,7 @@ header .logo{
     padding: 30px 16px;
     display: grid;
 }
-.business-container button{
+.business-container .button{
     place-self: center  ;
 }
 .business{
@@ -102,25 +111,23 @@ header .logo{
 }
 .business .title{
     font-family: "Satisfy";
-    font-size: 2.2rem;
+    font-size: 3rem;
     margin: 20px 0;
 }
 .business .text{
-    font-size: 1.9rem;
+    font-size: 2.1rem;
     font-weight: 300;
-    line-height: 40px;
     margin-bottom: 20px;
-}   
-.image-container{
-    justify-self: center;
-    display: grid;
-    place-items: center;
-    padding: 50px 0;
+    line-height: 30px;
 }
-.image-container .img{
+.ring{
+    display: grid;
+    justify-items: center;
+}
+.ring img{
     width: 85%;
 }
-.llavero{
+.necklace img{
     display: none;
 }
 .product-container{
@@ -128,6 +135,8 @@ header .logo{
     padding: 60px 16px 30px;
     text-align: center;
     background-color: var(--pink);
+    display: grid;
+    justify-items: center;
 }
 .product-container .intro .title{
     font-family: "Satisfy";
@@ -142,18 +151,16 @@ header .logo{
 .slider{
     width: 100%;
     background-color: white;
-    max-width: 540px;
     position: relative;
 }
+.slider .button-container{
+    height: 50px;
+}
 .slider .slide{
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     width: 100%;
     text-align: justify;
     padding: 50px;
-    transition: opacity .5s;
-    -o-transition: opacity .5s;
 }
 .slide-content{
     margin-bottom: 30px;
@@ -174,7 +181,7 @@ header .logo{
 .slide .image-container .img{
     width: 100%;
 }
-.slide button{
+.slider .button{
     place-self: center;
 }
 .slider #btn-left{
@@ -199,9 +206,9 @@ header .logo{
     text-align: center;
     font-size: 2.5rem;
 }
-.products button{
+.products .button{
     place-self: center;
-    grid-column-end: 3;
+    grid-column-end: 5;
     grid-column-start: 1;
     padding: 10px 20px;
 }
@@ -219,9 +226,16 @@ header .logo{
     -moz-box-shadow: -3px 8px 23px -10px rgba(0,0,0,0.75);
     box-shadow: -3px 8px 23px -10px rgba(0,0,0,0.75);
     font-size: 1.6rem;
+    line-height: 20px;
+    justify-content: space-between;
+}
+.products-container .card div{
+    padding: 0 10px;
+    padding-bottom: 20px;
 }
 .products-container .card img{
     width: 100%;
+    max-width: 300px;
 }
 .products-container .card .title{
     color: #152d69;
@@ -235,16 +249,19 @@ header .logo{
     width: 100%;
     padding: 40px 16px 80px 16px;
     color: white;
-    background-color: #6aa8a3;
+    background-image: url(https://secureservercdn.net/45.40.148.234/0v1.fd1.myftpupload.com/wp-content/uploads/2020/06/quien-soy-background-02.jpg?time=1634026474);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
 }
 .business-woman img{
     width: 100%;
 }
-.business-woman > .title{
+.business-woman div .title{
     font-family: "Satisfy";
     font-size: 2.4rem;
 }
-.business-woman > .text{
+.business-woman div .text{
     font-size: 1.8rem;
     line-height: 30px;
     font-weight: 300;
@@ -267,18 +284,28 @@ header .logo{
 .earn-content{
     display: grid;
     place-items: center;
+    row-gap: 30px;
+    margin-top: 20px;
 }
 .earn .card{
     width: 300px;
+    display: grid;
+    row-gap: 5px;
+    place-items: center;
+}
+.earn .card .img{
+    margin-bottom: 20px;
 }
 .earn .card p{
     font-size: 1.8rem;
     font-weight: 300;
 }
 .invest{
+    display: grid;
     background-color: var(--pink);
     padding: 30px 16px 70px 16px;
     text-align: center;
+    place-items: center;
 }
 .invest .title{
     font-family: "Satisfy";
@@ -312,7 +339,7 @@ header .logo{
 .features{
     background-color: rgb(255, 219, 215);;
     font-size: 2.4rem;
-    padding: 0 24px;
+    padding: 24px;
 }
 .features .title{
     font-family: "Pathway Gothic One";
@@ -340,18 +367,30 @@ header .logo{
     display: grid;
     place-items: center;
     padding: 32px;
+    row-gap: 20px;
 }
 .form-section .text{
-    width: 260px;
+    font-family: "Pathway Gothic One";
+    font-size: 3rem;
+    max-width: 400px;
 }
 .form-section .form{
     display: grid;
     text-align: left;
     width: 100%;
+    row-gap: 15px;
 }
 .form input{
     padding: 8px;
     border: 1px solid #ddd;
+    width: 100%;
+    font-size: 1.6rem;
+}
+.form input:focus-visible{
+    outline: none;
+}
+.form .phone-container{
+    margin-top: 24px;
 }
 .form-section .button-container{
     display: flex;
@@ -365,7 +404,11 @@ header .logo{
     bottom: -15px;
     height: 40px;left: -30px;
 }
-.form-section button{
+.form-section .button{
     border-radius: 0;
-    padding: 10px;
+    padding: 0 10px;
+    font-size: 1.6rem;
+}
+.form-section .error{
+    display: none;
 }

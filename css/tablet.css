@@ -1,0 +1,80 @@
+header{
+    padding: 20px;
+}
+.start{
+    padding:80px;
+}
+.business .intro{
+    margin-left: 50px;
+}
+.business .ring{
+    grid-template-columns: 1fr 1fr;
+    padding-left: 50px;
+}
+.ring img{
+    width: 70%;
+    position: relative;
+    top: 20%;
+}
+.necklace{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 50px;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+.necklace img{
+    display: inline-block;
+    width: 70%;
+    order: -1;
+    position: relative;
+    top: calc(20%);
+}
+.earn-content{
+    grid-template: auto/ repeat(3, 1fr);
+    place-items: center;
+    column-gap: 20px;
+}
+.earn-content .card{
+    width: 100%;
+    max-width: 300px;
+}
+.invest{
+    grid-template-columns: 1fr 1fr;
+}
+.products-container{
+    grid-template-columns: repeat(4, 1fr);
+}
+.products-container .button{
+    grid-column: auto;
+    justify-self: center;
+}
+.business-woman{
+    height: 100vh;
+    background-position-x: 35%;
+}
+.business-woman div{
+    width: 50%;
+    float: right;
+    position: relative;
+    top: calc(20%);
+}
+.business-woman img{
+    display: none;
+}
+.featuresandform{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.form-section .text{
+    width: 100%;
+}
+.product-container .slider .slide{
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+.slider .button{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
