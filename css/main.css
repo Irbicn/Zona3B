@@ -206,10 +206,12 @@ header .logo{
     text-align: center;
     font-size: 2.5rem;
 }
+.products .button-container{
+    height: 70px;
+    display: flex;
+    place-content: center;
+}
 .products .button{
-    place-self: center;
-    grid-column-end: 5;
-    grid-column-start: 1;
     padding: 10px 20px;
 }
 .products-container{
